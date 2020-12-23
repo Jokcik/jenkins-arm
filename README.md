@@ -17,5 +17,5 @@ docker exec myjenkins bash -c "/usr/local/bin/install-plugins.sh < /usr/share/je
 
 Связь проекта c докером:
 ```bash
-ln -s $(docker volume inspect --format '{{ .Mountpoint }}' jenkins_data) /var/jenkins_home
+ln -s $(docker volume inspect --format '{{ .Mountpoint }}' jenkins-arm_jenkins_1) /var/jenkins_home
 ```
