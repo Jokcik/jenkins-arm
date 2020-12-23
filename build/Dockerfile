@@ -1,4 +1,4 @@
-FROM jenkins4eval/jenkins
+FROM jenkins/jenkins
 USER root
 
 RUN apt-get update && apt-get install make
