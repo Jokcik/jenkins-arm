@@ -1,9 +1,5 @@
 version: '2'
 
-volumes:
-  jenkins_data:
-    external: true
-
 services:
   jenkins:
     image: jokcik/jenkins-arm
@@ -21,3 +17,6 @@ services:
       - /usr/local/bin/docker:/usr/local/bin/docker
       # mount ssh keys
       - /root/pi/.ssh:/root/.ssh
+
+volumes:
+  jenkins_data:

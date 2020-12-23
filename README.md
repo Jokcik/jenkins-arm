@@ -14,3 +14,8 @@ jenkinsPlugins.sort { it.shortName }
 docker cp plugins.txt myjenkins:/usr/share/jenkins/ref/plugins.txt
 docker exec myjenkins bash -c "/usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt"
 ```
+
+Связь проекта c докером:
+```bash
+ln -s $(docker volume inspect --format '{{ .Mountpoint }}' jenkins_data) /var/jenkins_home
+```
