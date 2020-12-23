@@ -76,3 +76,4 @@ workflow-remote-loader:1.5
 workflow-scm-step:2.11
 workflow-step-api:2.23
 workflow-support:3.7
+hashicorp-vault-plugin:3.7.0
